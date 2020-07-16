@@ -58,7 +58,7 @@ q_2 =2.15
 limit1 = find_nearest(q, q_1) #First our lower limit
 limit2 = find_nearest(q, q_2) #And of our higher limit
 q_sub = q[limit1:limit2] # We'll reduce the domain of Q
-perov_sub = perov[limit1:limit2,1:-1]
+perov_sub = perov[limit1:limit2,1:]
 
 q_linear = np.hstack((q_sub[0:10], q_sub[-11:-1])) #I'm taking the starting and ending values
 perov_linear = np.hstack((perov_sub[0:10,0], perov_sub[-11:-1,0])) #We'll use these to fit a straight line
@@ -76,7 +76,7 @@ def gaussian(x, a, b, c):
     return a*np.exp(-(x - b)**2/(2*c**2))
 
 #We'll also give an initial guess for our fits based off of a visual interpretaion of our data
-p0 = [45, 2.4, 2]
+p0 = [45, 2.4, 2] #(height, center, width)
 
 #Use scipy.optimize.curve_fit to fit our desired data
 popt, pcov = curve_fit(gaussian, q_sub, perov_fit, p0)
