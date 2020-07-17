@@ -89,3 +89,6 @@ plt.xlabel('Q [$\AA^{-1}$]',size=12) #Define x-axis label
 plt.ylabel('Intensity [a.u.]',size=12)#Define y-axis label
 plt.legend(loc="upper right")#Put legend in upper left hand corner
 
+#FEEDBACK I'd consider how this builds off of 04 - is this an answer to exercise 5? If so should we incorporate it into tutorial 04
+#Make sure there is an opportunitiy for students to practice, maybe you want them to write pseudocode first? Write their own definitiion?
+
