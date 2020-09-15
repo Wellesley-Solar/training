@@ -91,4 +91,7 @@ plt.legend(loc="upper right")#Put legend in upper left hand corner
 
 #FEEDBACK I'd consider how this builds off of 04 - is this an answer to exercise 5? If so should we incorporate it into tutorial 04
 #Make sure there is an opportunitiy for students to practice, maybe you want them to write pseudocode first? Write their own definitiion?
+#FEEDBACK I like the idea of this building to a multi-peak fitting scenario. Perhaps you want folks to fit a complicated
+#function with a single peak first, calculate the uncertainty, and then repeart with multiple gaussians? 
+#FEEDBACK I think an alternative would be to make this an alternative peak fitting tutorial - i.e. compare pvoigt and gaussian
 
